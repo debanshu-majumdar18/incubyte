@@ -3,7 +3,8 @@ class StringCalculator
     if input.empty?
       0
     else
-      input.to_i
+      numbers = input.split(",").map { |num| num.to_i }
+      sum = numbers.sum
     end
   end
 end
