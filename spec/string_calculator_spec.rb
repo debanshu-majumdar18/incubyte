@@ -21,5 +21,19 @@ describe StringCalculator do
         expect(StringCalculator.add("10")).to eql(10)
       end
     end
+
+    context "two numbers" do
+      context "given '4,4'" do
+        it "returns 8" do
+          expect(StringCalculator.add("4,4")).to eql(6)
+        end
+      end
+
+      context "given '25,75'" do
+        it "returns 100" do
+          expect(StringCalculator.add("25,75")).to eql(100)
+        end
+      end
+    end
   end
 end
